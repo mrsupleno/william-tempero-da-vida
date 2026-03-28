@@ -88,7 +88,7 @@ address { font-style: normal; }
   transition: background 0.3s, padding 0.3s, backdrop-filter 0.3s;
 }
 .nav.scrolled {
-  background: rgba(26, 10, 15, 0.95);
+  background: rgba(9, 26, 46, 0.95);
   backdrop-filter: blur(12px);
   padding: 14px 0;
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
@@ -131,7 +131,7 @@ address { font-style: normal; }
 }
 .hero__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(26,10,15,0.75) 0%, rgba(45,15,26,0.60) 50%, rgba(26,10,15,0.72) 100%);
+  background: linear-gradient(135deg, rgba(9,26,46,0.82) 0%, rgba(17,45,82,0.65) 50%, rgba(9,26,46,0.78) 100%);
   z-index: 1;
 }
 .hero__grid {
@@ -191,12 +191,12 @@ address { font-style: normal; }
 /* ===== MÚSICAS ===== */
 .musicas { padding: 120px 0; background: var(--cream); }
 .musicas__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px; }
-.musica-card { border-radius: var(--radius-lg); overflow: hidden; background: var(--white); box-shadow: 0 4px 20px rgba(26,10,15,0.08); transition: transform 0.3s, box-shadow 0.3s; }
-.musica-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(26,10,15,0.15); }
+.musica-card { border-radius: var(--radius-lg); overflow: hidden; background: var(--white); box-shadow: 0 4px 20px rgba(9,26,46,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+.musica-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(9,26,46,0.15); }
 .musica-card__img { position: relative; height: 200px; overflow: hidden; }
 .musica-card__img img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); transition: transform 0.5s, filter 0.3s; }
 .musica-card:hover .musica-card__img img { transform: scale(1.06); filter: brightness(0.85); }
-.musica-card__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,10,15,0.3) 0%, rgba(26,10,15,0.7) 100%); z-index: 1; }
+.musica-card__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,26,46,0.35) 0%, rgba(9,26,46,0.72) 100%); z-index: 1; }
 .musica-card__grid { position: absolute; inset: 0; z-index: 2; background-image: linear-gradient(rgba(201,146,60,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(201,146,60,0.06) 1px, transparent 1px); background-size: 40px 40px; }
 .musica-card__play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 3; width: 52px; height: 52px; background: rgba(201,146,60,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: white; transition: background 0.2s, transform 0.2s; }
 .musica-card:hover .musica-card__play { background: var(--gold); transform: translate(-50%, -50%) scale(1.1); }
@@ -262,7 +262,7 @@ address { font-style: normal; }
   .musicas__grid, .poemas__grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 700px) {
-  .nav__links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(26,10,15,0.98); flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+  .nav__links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(9,26,46,0.98); flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
   .nav__links.open { display: flex; }
   .nav__toggle { display: flex; z-index: 101; }
   .musicas__grid, .poemas__grid { grid-template-columns: 1fr; }
