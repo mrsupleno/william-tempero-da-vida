@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Ensure CNAME
-        run: echo "williamtempero.mais.top" > CNAME
+        run: echo "temperodavida.mais.top" > CNAME
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
