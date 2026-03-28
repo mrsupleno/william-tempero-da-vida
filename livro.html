@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tempero da Vida — O Livro | William Mota</title>
+  <meta name="description" content="Tempero da Vida — Versos que Tocam a Alma. Coletânea de poemas de William Mota. Scortecci Editora, 2025. ISBN 978-85-366-7149-9." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://williamtempero.mais.top/livro.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tempero da Vida — O Livro | William Mota" />
+  <meta property="og:description" content="Poesia que fala de Infância, Família, Amor, Fé e a essência da vida. 1ª edição 2025." />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://williamtempero.mais.top/livro.html" />
+  <meta property="og:image" content="https://williamtempero.mais.top/og-image.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── Página do livro ─────────────────────────────────── */
+    .livro-hero {
+      background: var(--burgundy);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .livro-hero__grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(201,146,60,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,146,60,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .livro-hero__inner {
+      position: relative; z-index: 2;
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .livro-cover {
+      position: relative;
+    }
+    .livro-cover img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.55);
+    }
+    .livro-cover__badge {
+      position: absolute;
+      bottom: -16px; right: -16px;
+      background: var(--gold);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border-radius: 6px;
+      box-shadow: 0 8px 24px rgba(201,146,60,0.4);
+    }
+    .livro-info {
+      padding-top: 16px;
+    }
+    .livro-info .section-label { color: var(--gold-light); }
+    .livro-info .section-title { color: var(--white); font-size: clamp(2rem, 4vw, 3.2rem); }
+    .livro-info .section-title em { color: var(--gold); }
+    .livro-info .livro-subtitle {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 32px;
+    }
+    .livro-ficha {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(201,146,60,0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 32px;
+    }
+    .livro-ficha h3 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .livro-ficha dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px 20px;
+    }
+    .livro-ficha dt {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.4);
+      white-space: nowrap;
+    }
+    .livro-ficha dd {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .livro-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Narrativa ───────────────────────────────────────── */
+    .livro-narrativa {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .livro-narrativa .container {
+      max-width: 860px;
+    }
+    .livro-narrativa .section-title { color: var(--wine); }
+    .livro-narrativa .section-title em { color: var(--gold); }
+
+    .temas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 48px 0;
+    }
+    .tema-card {
+      background: var(--cream);
+      border-radius: 12px;
+      padding: 24px 20px;
+      border-top: 3px solid var(--gold);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .tema-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(9,26,46,0.1);
+    }
+    .tema-card__icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .tema-card h3 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--wine);
+      margin-bottom: 6px;
+    }
+    .tema-card p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .narrativa-texto p {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      line-height: 1.85;
+      margin-bottom: 22px;
+    }
+    .narrativa-texto strong {
+      color: var(--wine);
+    }
+
+    /* ── Breadcrumb ──────────────────────────────────────── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 28px;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.4); transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { color: var(--gold); }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 860px) {
+      .livro-hero__inner { grid-template-columns: 1fr; gap: 40px; }
+      .livro-cover { max-width: 240px; margin: 0 auto; }
+    }
+    @media (max-width: 600px) {
+      .temas-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .temas-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">William Mota</span>
+        <span class="nav__logo-sub">Tempero da Vida</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#musicas">Músicas</a></li>
+        <li><a href="livro.html" class="nav__cta">O Livro</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO DO LIVRO -->
+  <section class="livro-hero">
+    <div class="livro-hero__grid"></div>
+    <div class="livro-hero__inner">
+
+      <!-- Capa -->
+      <div class="livro-cover">
+        <img
+          src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=560&q=80&auto=format&fit=crop"
+          alt="Tempero da Vida — capa do livro"
+          loading="eager"
+        />
+        <div class="livro-cover__badge">1ª Edição · 2025</div>
+      </div>
+
+      <!-- Informações -->
+      <div class="livro-info">
+        <div class="breadcrumb">
+          <a href="index.html">Início</a>
+          <span>›</span>
+          <span>O Livro</span>
+        </div>
+        <div class="section-label">Poesia · 156 páginas</div>
+        <h1 class="section-title">
+          Tempero da Vida<br />
+          <em>Versos que Tocam a Alma</em>
+        </h1>
+        <p class="livro-subtitle">William Mota</p>
+
+        <div class="livro-ficha">
+          <h3>Ficha Técnica</h3>
+          <dl>
+            <dt>Autor</dt>
+            <dd>William Mota</dd>
+            <dt>Editora</dt>
+            <dd>Scortecci Editora</dd>
+            <dt>Gênero</dt>
+            <dd>Poesia</dd>
+            <dt>ISBN</dt>
+            <dd>978-85-366-7149-9</dd>
+            <dt>Formato</dt>
+            <dd>14 × 21 cm</dd>
+            <dt>Páginas</dt>
+            <dd>156 páginas</dd>
+            <dt>Edição</dt>
+            <dd>1ª edição · 2025</dd>
+          </dl>
+        </div>
+
+        <div class="livro-actions">
+          <a href="https://wa.me/5527999017047?text=Ol%C3%A1%20William%2C%20quero%20saber%20como%20adquirir%20o%20livro%20Tempero%20da%20Vida!" class="btn btn--gold" target="_blank" rel="noopener">
+            Adquirir o Livro
+          </a>
+          <a href="https://www.youtube.com/@MUSICASPOEMASTEMPERODAVIDA" class="btn btn--ghost" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.3);color:#fff;">
+            ▶ Ouvir as músicas
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NARRATIVA -->
+  <section class="livro-narrativa">
+    <div class="container">
+      <div class="section-label">Sobre o Livro</div>
+      <h2 class="section-title">
+        Uma travessa fumegante<br />
+        <em>de sentimentos e emoções</em>
+      </h2>
+
+      <!-- Temas em cards -->
+      <div class="temas-grid">
+        <div class="tema-card">
+          <div class="tema-card__icon">🌱</div>
+          <h3>Infância</h3>
+          <p>A pureza das primeiras descobertas e a intensidade das pequenas grandes alegrias.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🏡</div>
+          <h3>Família</h3>
+          <p>Laços de sangue e afeto — raízes que nos prendem ao chão e nos impulsionam para o alto.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🌊</div>
+          <h3>A Vida que Segue</h3>
+          <p>Chegadas e partidas, vitórias e quedas — a coragem de seguir em frente.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">❤️</div>
+          <h3>Amor</h3>
+          <p>O condimento mais intenso — ora suave, ora ardente. Força criadora e redentora.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">✨</div>
+          <h3>Universo</h3>
+          <p>Reflexões sobre o céu estrelado, o sentido da existência e a beleza de fazer parte do todo.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🌅</div>
+          <h3>Esperança</h3>
+          <p>O tempero sutil que transforma qualquer receita em algo possível de se degustar com prazer.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🌑</div>
+          <h3>Solidão</h3>
+          <p>Amarga e necessária — nos confronta, nos silencia e, às vezes, nos ensina.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🙏</div>
+          <h3>Deus</h3>
+          <p>A essência. A fonte de todos os sabores, a chama que aquece o caldeirão da existência.</p>
+        </div>
+        <div class="tema-card">
+          <div class="tema-card__icon">🎵</div>
+          <h3>Música & IA</h3>
+          <p>Poemas que viraram músicas com melodias criadas com inteligência artificial — SUNO.</p>
+        </div>
+      </div>
+
+      <!-- Texto da narrativa completo -->
+      <div class="narrativa-texto">
+        <p>
+          O livro <strong>Tempero da Vida</strong> é mais do que uma coletânea de poemas.
+          Ele é uma travessa fumegante de sentimentos, emoções e reflexões, cuidadosamente preparados
+          ao longo do tempo com os mais diversos condimentos da existência humana.
+        </p>
+        <p>
+          Começamos pela <strong>Infância</strong>, essa fase mágica em que o mundo ainda é novo e encantado.
+          Os poemas que tocam essa etapa revelam a pureza das primeiras descobertas, o sabor da inocência
+          e a intensidade das pequenas grandes alegrias. É ali que os primeiros temperos da alma começam
+          a ser lançados — memórias que nos acompanharão por toda a vida.
+        </p>
+        <p>
+          Logo adentramos o universo da <strong>Família</strong>, esse caldo forte que nos sustenta nos dias
+          difíceis e adoça nossos dias felizes. Laços de sangue e afeto, raízes que nos prendem ao chão
+          e nos impulsionam para o alto. A família é o tempero constante, presente em quase todas as
+          receitas da vida.
+        </p>
+        <p>
+          Mas a vida não para. <strong>A Vida que Segue</strong> é o fio condutor dessa narrativa poética.
+          Entre chegadas e partidas, vitórias e quedas, ela nos ensina que é preciso caminhar mesmo quando
+          os caminhos se tornam difíceis. Cada verso dessa jornada fala do tempo, da passagem, da
+          impermanência e da coragem de seguir.
+        </p>
+        <p>
+          E onde há vida, sempre haverá o amor. Ele é o condimento mais intenso — ora suave, ora ardente.
+          O <strong>Amor</strong> pelos outros, por si mesmo, pelas lembranças, pelo que se viveu e pelo
+          que ainda se sonha. Em cada página, esse sentimento se manifesta em múltiplas formas, revelando-se
+          como força criadora e redentora.
+        </p>
+        <p>
+          O olhar então se expande e contempla o <strong>Universo</strong> — esse mistério grandioso que nos
+          envolve. O livro traz reflexões que apontam para o céu estrelado, questionando o sentido da
+          existência, a nossa pequenez e, ao mesmo tempo, a beleza de fazer parte de algo tão imenso.
+        </p>
+        <p>
+          Mas nem tudo é luz. A <strong>Solidão</strong> também comparece, como um tempero amargo e
+          necessário. Ela nos confronta, nos silencia e, às vezes, nos ensina. É na solidão que escutamos
+          com mais clareza o som da nossa própria alma.
+        </p>
+        <p>
+          Apesar das sombras, há sempre <strong>Esperança</strong>. Esse tempero sutil que transforma
+          qualquer receita em algo possível de se degustar com prazer. A esperança é o que mantém aceso
+          o desejo de continuar, de acreditar, de amar de novo, de recomeçar.
+        </p>
+        <p>
+          E, por fim, chegamos ao condimento maior: <strong>Deus</strong>. Presente em cada ingrediente
+          da vida, Ele é a base invisível que sustenta todas as receitas. É o sopro divino que dá sentido
+          a cada emoção, a cada verso. Deus, aqui, não é apenas um tema — é a essência. A fonte de todos
+          os sabores, a chama que aquece o caldeirão da existência.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div style="margin-top: 48px; text-align: center;">
+        <p style="font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--wine); margin-bottom: 24px;">
+          "Talvez você se veja nestas linhas, talvez encontre algo que nem sabia que procurava.<br />
+          Se isso acontecer, já valeu cada palavra."
+        </p>
+        <a href="https://wa.me/5527999017047?text=Ol%C3%A1%20William%2C%20quero%20saber%20como%20adquirir%20o%20livro%20Tempero%20da%20Vida!" class="btn btn--primary" target="_blank" rel="noopener">
+          Falar com William para adquirir
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span>William Mota</span>
+            <span>Tempero da Vida</span>
+          </div>
+          <p>Poemas musicados que revelam sentimentos, memórias e a essência da vida.</p>
+          <a href="https://wa.me/5527999017047" class="footer__whatsapp" target="_blank" rel="noopener">
+            WhatsApp: (27) 99901-7047
+          </a>
+        </div>
+        <div class="footer__links">
+          <strong>Navegação</strong>
+          <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#musicas">Músicas</a>
+            <a href="livro.html">O Livro</a>
+            <a href="index.html#contato">Contato</a>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <strong>Redes Sociais</strong>
+          <nav>
+            <a href="https://www.youtube.com/@MUSICASPOEMASTEMPERODAVIDA" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.instagram.com/temperodavidaw.m" target="_blank" rel="noopener">Instagram</a>
+          </nav>
+          <br />
+          <strong>Contato</strong>
+          <address>
+            Vila Velha — ES<br />
+            Natural de Pedreiras — MA<br /><br />
+            <a href="tel:+5527999017047">(27) 99901-7047</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 William Mota. Todos os direitos reservados.</span>
+        <div class="footer__legal">
+          <span class="footer__dev">Site desenvolvido pela <a href="https://sucesso.net.br" target="_blank" rel="noopener">Agência do Sucesso Empresarial</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
